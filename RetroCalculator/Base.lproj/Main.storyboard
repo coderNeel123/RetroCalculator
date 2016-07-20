@@ -260,14 +260,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-D9-tdX">
-                                <rect key="frame" x="194" y="539" width="115" height="48"/>
+                                <rect key="frame" x="194" y="539" width="100" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="2hD-Cu-HLd"/>
                                     <constraint firstAttribute="height" constant="56" id="HOZ-XL-D4s"/>
                                     <constraint firstAttribute="width" constant="164" id="Rgr-KN-Zbb"/>
                                     <constraint firstAttribute="height" constant="56" id="TCu-d6-fzV"/>
                                     <constraint firstAttribute="width" constant="299" id="k6k-UC-fca"/>
-                                    <constraint firstAttribute="width" constant="115" id="xYH-vp-Jhm"/>
+                                    <constraint firstAttribute="width" constant="100" id="xYH-vp-Jhm"/>
                                 </constraints>
                                 <state key="normal" image="clear"/>
                                 <variation key="default">
@@ -286,19 +286,30 @@
                                 <rect key="frame" x="357" y="539" width="50" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="XaG-zk-snT"/>
-                                    <constraint firstAttribute="width" constant="61" id="fAD-un-0vF"/>
-                                    <constraint firstAttribute="height" constant="63" id="jiI-oN-Opf"/>
                                     <constraint firstAttribute="height" constant="48" id="ndS-db-Txs"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="deletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9X-1X-MGr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-R4-FqD">
+                                <rect key="frame" x="300.5" y="539" width="50" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Dy3-5R-FSe"/>
+                                    <constraint firstAttribute="width" constant="61" id="K0F-GW-4Wb"/>
+                                    <constraint firstAttribute="width" constant="50" id="NBC-fd-5Ll"/>
+                                    <constraint firstAttribute="height" constant="48" id="edA-KJ-Ij2"/>
                                 </constraints>
                                 <state key="normal" image="Decimal"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="fAD-un-0vF"/>
-                                        <exclude reference="jiI-oN-Opf"/>
+                                        <exclude reference="K0F-GW-4Wb"/>
+                                        <exclude reference="Dy3-5R-FSe"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="decimalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSt-O4-JCp"/>
+                                    <action selector="decimalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBm-Ds-SxC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,13 +320,16 @@
                             <constraint firstItem="T52-zN-uwt" firstAttribute="centerX" secondItem="xdx-Qa-03q" secondAttribute="centerX" id="22h-um-Ced"/>
                             <constraint firstAttribute="trailing" secondItem="DgW-AI-NvO" secondAttribute="trailing" id="3sI-ll-tb4"/>
                             <constraint firstItem="DgW-AI-NvO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6ZN-Gr-gK2"/>
+                            <constraint firstItem="wdM-gN-mAv" firstAttribute="leading" secondItem="VGU-R4-FqD" secondAttribute="trailing" constant="6.5" id="8HE-Km-bY1"/>
                             <constraint firstItem="rk4-G8-nWl" firstAttribute="leading" secondItem="xdx-Qa-03q" secondAttribute="leading" id="9bf-Uz-nru"/>
                             <constraint firstItem="xdx-Qa-03q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xk-fs-oSm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DgW-AI-NvO" secondAttribute="bottom" id="B1m-Fm-JxC"/>
                             <constraint firstItem="wdM-gN-mAv" firstAttribute="trailing" secondItem="T52-zN-uwt" secondAttribute="trailing" id="BE9-WW-C6y"/>
+                            <constraint firstItem="VGU-R4-FqD" firstAttribute="top" secondItem="xdx-Qa-03q" secondAttribute="bottom" constant="7" id="CLq-43-slf"/>
                             <constraint firstItem="rk4-G8-nWl" firstAttribute="top" secondItem="xdx-Qa-03q" secondAttribute="top" constant="15" id="Dgf-io-JPe"/>
                             <constraint firstItem="DgW-AI-NvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E2g-dn-Tca"/>
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="centerX" secondItem="xdx-Qa-03q" secondAttribute="centerX" id="EQd-f8-1kU"/>
+                            <constraint firstItem="VGU-R4-FqD" firstAttribute="leading" secondItem="7d5-D9-tdX" secondAttribute="trailing" constant="6.5" id="Gnn-Iz-N8d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kEk-cb-i6L" secondAttribute="bottom" id="MHL-ET-Bw4"/>
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkd-nf-z6I"/>
                             <constraint firstItem="xdx-Qa-03q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ahJ-us-EgY"/>
@@ -386,6 +400,7 @@
         <image name="backpanel" width="620" height="938"/>
         <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
+        <image name="delete" width="111" height="114"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
         <image name="ground" width="888" height="72"/>

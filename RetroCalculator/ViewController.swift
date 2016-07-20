@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     
     
-    var buttonSound = AVAudioPlayer!()
+    var buttonSound = AVAudioPlayer()
     var runningNumber = ""
     var leftValString = ""
     var rightValString = ""
@@ -36,7 +36,6 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var outputLabel: UILabel!
-    
     
     
     
@@ -57,6 +56,10 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func deletePressed(sender: AnyObject) {
+        playSound()
+        deletePressed()
+    }
     
     @IBAction func decimalPressed(sender: AnyObject) {
         playSound()
@@ -175,6 +178,16 @@ class ViewController: UIViewController {
       }
        
     }
+    }
+    
+    func deletePressed () {
+        runningNumber = String(runningNumber.characters.dropLast())
+        outputLabel.text = runningNumber
+        
+        if outputLabel.text == "" {
+            clear()
+        }
+        
     }
     
     func playSound () {
