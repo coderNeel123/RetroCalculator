@@ -58,6 +58,10 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func decimalPressed(sender: AnyObject) {
+        playSound()
+        decimalPressed()
+    }
     
     @IBAction func clearButtonPressed(sender: AnyObject) {
         playSound()
@@ -149,6 +153,28 @@ class ViewController: UIViewController {
         runningNumber = ""
         currentOperation = Operation.empty
         outputLabel.text = "0"
+    }
+    
+    func decimalPressed () {
+        if runningNumber == "" {
+            runningNumber += "."
+            outputLabel.text = runningNumber
+
+        }
+        else {
+        if runningNumber != "."{
+            let decimalCharacter: Set<Character> = ["."]
+
+            if decimalCharacter.isSubsetOf(runningNumber.characters) != true {
+                runningNumber += "."
+                outputLabel.text = runningNumber
+            }
+            else {
+                // Do nothing
+            }
+      }
+       
+    }
     }
     
     func playSound () {

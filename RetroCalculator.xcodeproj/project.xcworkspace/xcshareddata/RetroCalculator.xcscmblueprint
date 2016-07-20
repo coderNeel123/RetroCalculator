@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "17FBE3A4A910ACE5505F5AFE096AEBFEEDD46CDB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "17FBE3A4A910ACE5505F5AFE096AEBFEEDD46CDB" : 0,
+    "E59CE17B1A7A710B51AE5A6544ADAEDB8C7E14F6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3AADD84D-3095-435F-923E-287BA838F023",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "17FBE3A4A910ACE5505F5AFE096AEBFEEDD46CDB" : "RetroCalculator\/",
+    "E59CE17B1A7A710B51AE5A6544ADAEDB8C7E14F6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RetroCalculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RetroCalculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:coderNeel123\/RetroCalculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FBE3A4A910ACE5505F5AFE096AEBFEEDD46CDB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:coderNeel123\/iOS-Boom-App-Test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E59CE17B1A7A710B51AE5A6544ADAEDB8C7E14F6"
+    }
+  ]
+}

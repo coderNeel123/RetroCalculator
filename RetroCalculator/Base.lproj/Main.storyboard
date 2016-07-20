@@ -259,8 +259,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-D9-tdX">
-                                <rect key="frame" x="243" y="532" width="115" height="48"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-D9-tdX">
+                                <rect key="frame" x="194" y="539" width="115" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="2hD-Cu-HLd"/>
                                     <constraint firstAttribute="height" constant="56" id="HOZ-XL-D4s"/>
@@ -282,6 +282,25 @@
                                     <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoT-Fc-qwQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdM-gN-mAv">
+                                <rect key="frame" x="357" y="539" width="50" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XaG-zk-snT"/>
+                                    <constraint firstAttribute="width" constant="61" id="fAD-un-0vF"/>
+                                    <constraint firstAttribute="height" constant="63" id="jiI-oN-Opf"/>
+                                    <constraint firstAttribute="height" constant="48" id="ndS-db-Txs"/>
+                                </constraints>
+                                <state key="normal" image="Decimal"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fAD-un-0vF"/>
+                                        <exclude reference="jiI-oN-Opf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="decimalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSt-O4-JCp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -293,6 +312,7 @@
                             <constraint firstItem="rk4-G8-nWl" firstAttribute="leading" secondItem="xdx-Qa-03q" secondAttribute="leading" id="9bf-Uz-nru"/>
                             <constraint firstItem="xdx-Qa-03q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xk-fs-oSm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DgW-AI-NvO" secondAttribute="bottom" id="B1m-Fm-JxC"/>
+                            <constraint firstItem="wdM-gN-mAv" firstAttribute="trailing" secondItem="T52-zN-uwt" secondAttribute="trailing" id="BE9-WW-C6y"/>
                             <constraint firstItem="rk4-G8-nWl" firstAttribute="top" secondItem="xdx-Qa-03q" secondAttribute="top" constant="15" id="Dgf-io-JPe"/>
                             <constraint firstItem="DgW-AI-NvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E2g-dn-Tca"/>
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="centerX" secondItem="xdx-Qa-03q" secondAttribute="centerX" id="EQd-f8-1kU"/>
@@ -300,9 +320,11 @@
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mkd-nf-z6I"/>
                             <constraint firstItem="xdx-Qa-03q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ahJ-us-EgY"/>
                             <constraint firstAttribute="trailing" secondItem="kEk-cb-i6L" secondAttribute="trailing" id="cmf-3H-cY2"/>
+                            <constraint firstItem="7d5-D9-tdX" firstAttribute="leading" secondItem="T52-zN-uwt" secondAttribute="leading" id="fgz-1O-os3"/>
                             <constraint firstItem="kEk-cb-i6L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gtu-BM-5nz"/>
                             <constraint firstItem="T52-zN-uwt" firstAttribute="centerY" secondItem="xdx-Qa-03q" secondAttribute="centerY" constant="35" id="gzF-BJ-iJd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7d5-D9-tdX" secondAttribute="bottom" constant="9" id="hsW-gk-ddh"/>
+                            <constraint firstItem="wdM-gN-mAv" firstAttribute="top" secondItem="xdx-Qa-03q" secondAttribute="bottom" constant="7" id="qo5-sD-aMz"/>
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="centerX" secondItem="xdx-Qa-03q" secondAttribute="centerX" constant="25" id="u1P-L1-Whc"/>
                             <constraint firstItem="7d5-D9-tdX" firstAttribute="top" secondItem="xdx-Qa-03q" secondAttribute="bottom" constant="7" id="xEZ-GE-ADz"/>
                         </constraints>
@@ -310,6 +332,8 @@
                             <mask key="constraints">
                                 <exclude reference="9bf-Uz-nru"/>
                                 <exclude reference="1HO-9c-mCC"/>
+                                <exclude reference="EQd-f8-1kU"/>
+                                <exclude reference="Mkd-nf-z6I"/>
                                 <exclude reference="u1P-L1-Whc"/>
                                 <exclude reference="hsW-gk-ddh"/>
                             </mask>
@@ -357,6 +381,7 @@
         <image name="7" width="111" height="114"/>
         <image name="8" width="111" height="114"/>
         <image name="9" width="111" height="114"/>
+        <image name="Decimal" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
         <image name="clear" width="333" height="114"/>
