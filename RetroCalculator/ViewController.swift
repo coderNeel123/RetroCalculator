@@ -185,7 +185,8 @@ class ViewController: UIViewController {
         outputLabel.text = runningNumber
         
         if outputLabel.text == "" {
-            clear()
+            runningNumber = ""
+            outputLabel.text = "0"
         }
         
     }

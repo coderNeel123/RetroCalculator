@@ -304,8 +304,8 @@
                                 <state key="normal" image="Decimal"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="K0F-GW-4Wb"/>
                                         <exclude reference="Dy3-5R-FSe"/>
+                                        <exclude reference="K0F-GW-4Wb"/>
                                     </mask>
                                 </variation>
                                 <connections>
